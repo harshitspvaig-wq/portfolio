@@ -4,6 +4,12 @@
     --background-color: #eeeff1;
 }
 
+.darkmode{
+    --text-color: #eeeff1;
+    --link-color: #4a76ee;
+    --background-color: #1a1c20;;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -74,7 +80,13 @@ nav .right a span{
 
 .hero-section .text h2{
     font-size: 45px;
+    color: var(--text-color);
 }
+
+.hero-section .text p{
+    color: var(--text-color);
+}
+
 
 hero-section .text .links{
     margin-top: 25px;
@@ -106,9 +118,63 @@ hero-section .text .links{
 .hero-section .headshot img{
     width: 350px;
     border-radius: 50%;
+    transition: 0.3s;
+}
+
+.hero-section .headshot img:hover{
+    width: 360px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px var(--text-color);
 
 }
 
+/*SECTION:2 SKILLS*/
+.skills-section
+{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.skills-section .text{
+    color: var(--text-color);
+}
+
+.skills-section .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 10px;
+    gap: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell span{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.skills-section .cells .cell img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
 @media(max-width: 850px)
 {
  /*Section: 1 HERO*/
