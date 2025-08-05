@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css"> 
     <title>Portfolio</title>
 </head>
-<body class="darkmode">
+<body class="adarkmode">
     <!--NAVBAR-->
     <nav>
         <div class="left">
@@ -29,7 +29,7 @@
 
             <a href="mailto:harshit.spvaig@gmail.com">
                 <i class="fa-solid fa-envelope"></i>
-                <span>Github</span>
+                <span>email</span>
             </a>
         </div>
     </nav>
@@ -38,7 +38,7 @@
     <!--About-->
     <section class="hero-section">
         <div class="text">
-            <h2>Hi, I am Harshit</h2>
+            <h2>Hi, I am Harshit &#128075;</h2>
             <p>I am a Full Stack Developer with over three years of experience in User Interface, Application Development, and Web Development. I specialize in the Spring framework, building scalable, robust, and high-performing web applications.<br><br>
                 My expertise spans both frontend and backend development, enabling me to create seamless user experiences and efficient server-side functionalities. On the frontend, I excel in crafting responsive and interactive designs using technologies like HTML5, CSS3, JavaScript, React, and jQuery. On the backend, I leverage the power of Java and Spring to develop secure and feature-rich applications, ensuring adherence to industry best practices.<br><br>
                 
@@ -123,9 +123,47 @@
     </section>
 
     <!--Testimony-->
-    <section></section>
+    <section id="testimony" class="testimony-section">
+        <h2>Testimony</h2>
+        
+        <div class="group">
+            <div class="person-details">
+                <img src="images/testimonia-image.webp" alt="testimonial-image"/>
+                <p>Harshit Mishra</p>
+                <p>providing the realtime solutions!</p>
+            </div>
+        
+
+            <div class="text">
+                "Detail-oriented, organized, and meticulous employee. Works at fast pace to meet tight deadlines. Enthusiastic team player ready to contribute to company success."
+            </div>
+        </div>
+    </section>
 
     <!--Contact-->
-    <section></section>
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+
+        <div class="group">
+            <div class="text">In case of any project development or consultation, feel free to reach and kindly submit the form with your basic details like: name, email, contact and message (requirment specific). I will get back to you on priority basis.</div>
+
+            <form>
+                <label for="name">Name:</label>
+                <input id="name" type="text">
+
+                <label for="email">Email:</label>
+                <input id="email" type="email">
+
+                <label for="contact">Contact:</label>
+                <input id="contact" type="number">
+
+                <label for="message">Message:</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </div>
+    </section>
 </body>
 </html>
