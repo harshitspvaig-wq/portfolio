@@ -23,6 +23,8 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a{
@@ -175,6 +177,121 @@ hero-section .text .links{
     object-fit: contain;
     border-radius: 2px;
 }
+
+/*SECTION:3 TESTIMONY*/
+.testimony-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.testimony-section h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.testimony-section .group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.testimony-section .group .person-details{
+    text-align: center;
+    flex: 2;
+}
+
+.testimony-section .group .person-details img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.testimony-section .group .person-details img:hover{
+    width: 220px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px var(--text-color);
+}
+
+
+.testimony-section .group .person-details p{
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.testimony-section .group .person-details p:last-child{
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.testimony-section .group .text{
+    flex: 8;
+    color: var(--text-color);
+}
+
+/* SECTION: 4 CONTACTS*/
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2{
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.contact-section .group
+{
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text{
+    flex: 3;
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+.contact-section .group form{
+    flex: 3;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea{
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;  
+}
+
+.contact-section .group form button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact-section .group form button:hover{
+    filter: brightness(.9);
+}
+
 @media(max-width: 850px)
 {
  /*Section: 1 HERO*/
@@ -192,12 +309,28 @@ hero-section .text .links{
 
  .hero-section .headshot img{
     width: 300px;
-    
-
-}
 }
 
+.hero-section .headshot img:hover{
+    width: 320px;
+    box-shadow: 0 0 15px var(--text-color);
+}
 
+/*Section: 3 TESTIMONY*/
+.testimony-section{
+    text-align: center;
+}
+
+.testimony-section .group{
+    flex-direction: column;
+}
+
+/*Section: 4 CONTACT*/
+.contact-section .group{
+    flex-direction: column;
+}
+
+}
 
 @media(max-width: 600px)
 {
@@ -230,5 +363,24 @@ hero-section .text .links{
         font-size: 30px;
     }
     
+    /*Section-2 SKILLS*/
+    .skills-section
+    {
+        padding: 0 20px;
+    }
+
+    .skills-section .cells .cell span{
+        font-size: 16px;
+    }
+
+    /*Section-3 TESTIMONY*/
+    .testimony-section{
+        padding: 0 20px;
+    }
+
+    /*Section-4 CONTACTS*/
+    .contact-section{
+        padding: 0 20px;
+    }
 }
 
