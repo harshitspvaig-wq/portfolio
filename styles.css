@@ -32,6 +32,36 @@ a{
     text-decoration: none;
 }
 
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+#theme-switch svg{
+    fill: var(--text-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
